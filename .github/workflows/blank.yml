@@ -18,6 +18,7 @@ jobs:
       - name: Install Newman
         run: |
           npm install  newman
+          npm i newman-reporter-htmlextra
           
 
       - name: Run Test
