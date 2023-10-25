@@ -17,9 +17,7 @@ jobs:
 
       - name: Install Newman
         run: |
-          npm install  newman
-          npm install  newman-reporter
-          
+          npm install  newman    
 
       - name: Run Test
         run: newman run ServeRest.postman_collection.json -e ServeRestEnvi.postman_environment.json -r cli,
